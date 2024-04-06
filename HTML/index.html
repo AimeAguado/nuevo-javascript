@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <form id="loginForm">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+    <br>
+    <div id="mensaje"></div>
+
+    <h1>Carrito de Compras</h1>
+    <form id="formulario">
+        <div>
+            <input type="checkbox" id="manzana" name="manzana" data-precio="5">
+            <label for="manzana">Manzana - $5</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Banana" name="Banana" data-precio="3">
+            <label for="Banana">Banana - $3</label>
+        </div>
+        <div>
+            <input type="checkbox" id="naranja" name="naranja" data-precio="4">
+            <label for="naranja">Naranja - $4</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pera" name="pera" data-precio="6">
+            <label for="pera">Pera - $6</label>
+        </div>
+        <button type="button" id="agregarBtn">Agregar al Carrito</button>
+    </form>
+    <div id="carrito"></div>
+    <button id="eliminarBtn">Eliminar Último Producto</button>
+    <p>Total de la compra: <span id="total"></span></p>
+    <div class="checkout">
+        <div class="productos">
+
+        </div>
+        <div class="informacion-envio">
+            
+        </div>
+        <div class="informacion-pago">
+            
+        </div>
+        <button id="finalizarCompra">Finalizar Compra</button>
+    </div>
+
+    
+
+    <script src="../JS/main.js"></script>
+    <script src="../JS/checkout.js" defer></script>
+</body>
+</html>
